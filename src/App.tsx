@@ -7,7 +7,7 @@ function App() {
   const [data, setData] = useState<any>(null);
 
   useEffect(() => {
-    fetch("http://api.freeapi.app/api/v1/public/cats/cat/random")
+    fetch("https://api.freeapi.app/api/v1/public/cats/cat/random")
       .then((response) => response.json())
       .then((data) => {
         setData(data.data);
